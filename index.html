@@ -1,208 +1,81 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07080a" />
-    <meta name="description" content="Marco Sarmiento — a first-year BS Computer Science student building static sites, homelab experiments, and frontend work." />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Marco Sarmiento — Portfolio" />
-    <meta property="og:description" content="A living circuit-board portfolio for Marco Sarmiento, a first-year BS Computer Science student." />
-    <meta property="og:image" content="assets/me.webp" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>Marco Sarmiento — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,300..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="app-frame" id="app-shell">
-      <svg class="circuit-layer" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
-        <defs>
-          <pattern id="micro-grid" width="34" height="34" patternUnits="userSpaceOnUse">
-            <path d="M 34 0 L 0 0 0 34" fill="none" stroke="rgba(180,191,196,.08)" stroke-width="1" />
-          </pattern>
-          <linearGradient id="circuit-sweep" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#e2b178" stop-opacity="0" />
-            <stop offset=".47" stop-color="#e2b178" stop-opacity="0" />
-            <stop offset=".56" stop-color="#e2b178" stop-opacity=".12" />
-            <stop offset=".62" stop-color="#e2b178" stop-opacity="0" />
-            <stop offset="1" stop-color="#e2b178" stop-opacity="0" />
-          </linearGradient>
-          <radialGradient id="screen-cone" cx="50%" cy="42%" r="72%">
-            <stop offset="0" stop-color="#07080a" stop-opacity="0" />
-            <stop offset=".72" stop-color="#07080a" stop-opacity=".1" />
-            <stop offset="1" stop-color="#07080a" stop-opacity=".82" />
-          </radialGradient>
-        </defs>
-        <rect width="1600" height="900" fill="#07080a" />
-        <rect width="1600" height="900" fill="url(#micro-grid)" opacity=".48" />
-        <g class="trace-map" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path class="trace trace-a" d="M-40 120 H190 L264 194 H485 L554 125 H782 L840 183 H1076 L1132 127 H1660" />
-          <path class="trace trace-b" d="M-20 760 H156 L232 684 H410 L490 764 H692 L770 686 H984 L1060 762 H1260 L1344 678 H1620" />
-          <path class="trace trace-c" d="M320 -30 V134 L390 204 V410 L310 490 V652 L388 730 V930" />
-          <path class="trace trace-d" d="M1256 -30 V126 L1178 204 V368 L1260 450 V620 L1188 700 V930" />
-          <path class="trace trace-e" d="M-30 336 H110 L174 272 H352 L412 332 H600 L660 272 H836 L900 336 H1048 L1108 276 H1302 L1360 338 H1630" />
-          <path class="trace trace-f" d="M-20 526 H210 L282 454 H474 L542 522 H730 L808 446 H1010 L1076 520 H1230 L1300 450 H1620" />
-          <path class="trace trace-g" d="M664 -20 V82 L728 146 V280 L664 344 V470 L730 536 V650 L664 714 V920" />
-          <path class="trace trace-h" d="M936 -20 V104 L874 166 V300 L938 364 V478 L874 544 V674 L938 738 V920" />
-        </g>
-        <g class="contact-pads">
-          <circle cx="190" cy="120" r="5" /><circle cx="485" cy="194" r="4" /><circle cx="782" cy="125" r="5" />
-          <circle cx="1076" cy="183" r="4" /><circle cx="410" cy="764" r="5" /><circle cx="984" cy="686" r="4" />
-          <circle cx="320" cy="134" r="4" /><circle cx="1256" cy="126" r="5" /><circle cx="352" cy="332" r="4" />
-          <circle cx="1302" cy="276" r="5" /><circle cx="474" cy="522" r="4" /><circle cx="1230" cy="520" r="4" />
-          <circle cx="664" cy="344" r="5" /><circle cx="936" cy="364" r="5" />
-        </g>
-        <g class="vias"><circle cx="83" cy="212" r="2" /><circle cx="1466" cy="182" r="2" /><circle cx="76" cy="592" r="2" /><circle cx="1500" cy="716" r="2" /><circle cx="572" cy="72" r="2" /><circle cx="1040" cy="828" r="2" /><circle cx="1108" cy="612" r="2" /></g>
-        <rect class="sweep-layer" width="1600" height="900" fill="url(#circuit-sweep)" />
-        <rect width="1600" height="900" fill="url(#screen-cone)" />
-      </svg>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07080a">
+  <meta name="description" content="Marco Sarmiento — first-year BS Computer Science student at the University of the Cordilleras, Baguio City, Philippines.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Marco Sarmiento">
+  <meta property="og:title" content="Marco Sarmiento">
+  <meta property="og:description" content="Marco Sarmiento — first-year BS Computer Science student at the University of the Cordilleras, Baguio City, Philippines.">
+  <meta property="og:url" content="https://REPLACE-ME/">
+  <meta property="og:image" content="https://REPLACE-ME/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Marco Sarmiento</title>
+  <link rel="icon" href="images/mark.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/board.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Marco Sarmiento</span></div>
+  <div class="board" aria-hidden="true">
+    <div class="board-layer">
 
-      <div class="screen-sheen" aria-hidden="true"></div>
-
-      <header class="top-rail">
-        <a class="brand-lockup interactive" href="#home" data-route="#home" aria-label="Go to Marco Sarmiento home">
-          <span class="brand-mark" aria-hidden="true"><span>M</span><span>S</span><i></i></span>
-          <span class="brand-text"><strong>MARCO</strong><em>SARMIENTO</em></span>
-        </a>
-        <div class="top-meta">
-          <span>BS COMPUTER SCIENCE / YR 01</span>
-          <span class="top-separator">/</span>
-          <span>NODE: MS-01</span>
-        </div>
-        <div class="availability"><span class="status-ping" aria-hidden="true"></span><span>AVAILABLE</span></div>
-      </header>
-
-      <main class="stage" id="stage" aria-live="polite">
-        <section class="room room-home is-active" id="room-home" data-room="home" aria-labelledby="home-title">
-          <div class="room-intro room-intro-home">
-            <span class="room-index">ROOM_01 <i></i></span>
-            <span class="room-description">IDENTITY PLATE / PERSONAL SYSTEM</span>
-          </div>
-          <div class="home-layout">
-            <div class="portrait-panel panel-frame home-portrait">
-              <div class="panel-corner panel-corner-tl"></div><div class="panel-corner panel-corner-tr"></div><div class="panel-corner panel-corner-bl"></div><div class="panel-corner panel-corner-br"></div>
-              <div class="calibration-label label-top">PORTRAIT / 001</div>
-              <div class="calibration-label label-side">CALIBRATION // 2026.11</div>
-              <div class="measure measure-top"><span>00</span><i></i><span>40</span><i></i><span>80</span></div>
-              <div class="measure measure-bottom"><span>MS-01</span><span>IMG / 01</span></div>
-              <div class="crosshair" aria-hidden="true"><span></span><i></i></div>
-              <div class="portrait-window"><img src="assets/me.webp" alt="Portrait of Marco Sarmiento wearing a suit and tie" /></div>
-              <div class="scanline" aria-hidden="true"></div>
-              <div class="portrait-caption"><span>SUBJECT / MARCO SARMIENTO</span><span>STATUS / ONLINE</span></div>
-            </div>
-            <div class="home-copy">
-              <div class="eyebrow"><span class="eyebrow-line"></span><span>FIRST-YEAR COMPUTER SCIENCE / BUILD LOG</span></div>
-              <h1 id="home-title"><span>Marco</span><span>Sarmiento<span class="headline-dot">.</span></span></h1>
-              <div class="hero-actions">
-                <a class="button button-primary interactive" href="#works" data-route="#works">VIEW WORKS <span>↗</span></a>
-                <a class="text-link interactive" href="#index" data-route="#index">OPEN INDEX <span>→</span></a>
-              </div>
-              <div class="signal-readout">
-                <div><span class="readout-label">CURRENT SIGNAL</span><strong>LEARNING IN PUBLIC</strong></div>
-                <div><span class="readout-label">LAST PING</span><strong>NOW / ONLINE</strong></div>
-              </div>
-            </div>
-          </div>
-          <div class="home-coordinate mono">14°35'N / 120°59'E <span>//</span> MANILA, PH</div>
-        </section>
-
-        <section class="room room-about" id="room-about" data-room="about" aria-labelledby="about-title" aria-hidden="true">
-          <div class="room-intro"><span class="room-index">ROOM_02 <i></i></span><span class="room-description">PERSONAL PROFILE / SIGNAL SOURCE</span></div>
-          <div class="about-layout">
-            <div class="about-portrait panel-frame">
-              <div class="about-portrait-top"><span>SUBJECT / 01</span><span>OPEN PROFILE</span></div>
-              <div class="portrait-window"><img src="assets/me.webp" alt="Portrait of Marco Sarmiento" /></div>
-              <div class="vertical-caption mono">MARCO / S-01 / 2026</div>
-              <div class="about-portrait-bottom"><span>STUDENT</span><span>BSCS</span><span>AVAILABLE</span></div>
-            </div>
-            <div class="about-copy">
-              <div class="eyebrow"><span class="eyebrow-line"></span><span>ABOUT THE OPERATOR</span></div>
-              <h2 id="about-title">Curious by default.<br /><em>Precise by practice.</em></h2>
-              <p class="about-lead">I’m Marco, a first-year computer science student learning how ideas become interfaces, systems, and things people can actually use.</p>
-              <p class="about-body">My current orbit includes small web builds, terminal experiments, and a growing homelab. I’m interested in the quiet details: how a page loads, how a system explains itself, and how a rough idea becomes a working artifact.</p>
-              <div class="now-card panel-frame"><div class="now-heading"><span class="signal-dot"></span><span>NOW / 2026.11</span></div><p>Learning JavaScript patterns, documenting homelab notes, and turning small experiments into finished pieces.</p></div>
-            </div>
-            <div class="spec-panel panel-frame">
-              <div class="spec-head"><span>PROFILE_SPEC</span><span>MS-01</span></div>
-              <dl class="spec-list">
-                <div><dt>NAME</dt><dd>Marco Sarmiento</dd></div>
-                <div><dt>BIRTHDAY</dt><dd>Aril 28 2007</dd></div>
-                <div><dt>AGE</dt><dd>19 Years Old</dd></div>
-                <div><dt>LOCATION</dt><dd>BAGIO CITY</dd></div>
-                <div><dt>COLLEGE</dt><dd>UNIVERSITY OF THE CORDILLIERAS</dd></div>
-                <div><dt>PROGRAM</dt><dd>BS Computer Science</dd></div>
-                <div><dt>YEAR</dt><dd>01 / FIRST YEAR</dd></div>
-                <div><dt>HOBBIES</dt><dd>Web / Linux / Homelab</dd></div>
-                <div><dt>SKILLS</dt><dd>HTML / CSS / JS</dd></div>
-              </dl>
-              <div class="spec-foot mono">DATASET / SELF-REPORTED / LIVE</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="room room-works" id="room-works" data-room="works" aria-labelledby="works-title" aria-hidden="true">
-          <div class="room-intro"><span class="room-index">ROOM_03 <i></i></span><span class="room-description">SELECTED WORKS / LIVE TRACE</span></div>
-          <div class="works-layout">
-            <div class="work-viewer panel-frame">
-              <div class="viewer-top"><span>ARTIFACT_VIEWER</span><span id="work-counter">01 / 03</span></div>
-              <div class="art-stage" id="work-art" aria-label="Line drawing of selected work"></div>
-              <div class="viewer-bottom"><span class="mono">VECTOR / HAND-AUTHORED</span><span class="viewer-signal"><i></i> SIGNAL LOCKED</span></div>
-            </div>
-            <div class="works-copy">
-              <div class="eyebrow"><span class="eyebrow-line"></span><span>SELECTED WORKS / 03</span></div>
-              <p class="work-kicker mono" id="work-kicker">CASE_01 / INFRASTRUCTURE</p>
-              <h2 id="works-title"><span id="work-title">Homelab</span><em id="work-title-em"> Node Map</em></h2>
-              <p class="work-description" id="work-description">A visual map for a small home network: services, machines, and the spaces between them made legible at a glance.</p>
-              <div class="work-meta"><div><span>STACK</span><strong id="work-stack">Linux / Proxmox / SVG</strong></div><div><span>RESULT</span><strong id="work-result">A clearer way to see the system.</strong></div></div>
-              <div class="work-controls"><button class="step-button interactive" type="button" id="work-prev" aria-label="View previous project">← <span>PREV</span></button><button class="step-button interactive" type="button" id="work-next" aria-label="View next project"><span>NEXT</span> →</button></div>
-              <a class="text-link interactive work-link" id="work-link" href="#index" data-route="#index">REQUEST CASE NOTES <span>↗</span></a>
-            </div>
-          </div>
-          <div class="works-foot mono"><span>01—03 / USE ARROW KEYS OR STEPPER</span><span>PROJECTS / DOCUMENTED AS THEY GROW</span></div>
-        </section>
-
-        <section class="room room-index-page" id="room-index" data-room="index" aria-labelledby="index-title" aria-hidden="true">
-          <div class="room-intro"><span class="room-index">ROOM_04 <i></i></span><span class="room-description">CONTACT / SYSTEM INDEX</span></div>
-          <div class="index-layout">
-            <div class="index-copy">
-              <div class="eyebrow"><span class="eyebrow-line"></span><span>OPEN CHANNELS</span></div>
-              <h2 id="index-title">Find the<br /><em>signal.</em></h2>
-              <p>For a project, a collaboration, or just a good technical rabbit hole, the index is open.</p>
-              <a class="button button-primary interactive" href="mailto:add-your-email@example.com">SEND A SIGNAL <span>↗</span></a>
-              <div class="index-status"><span class="status-ping"></span><strong>REPLY STATUS / AVAILABLE</strong></div>
-            </div>
-            <div class="index-grid">
-              <a class="index-card interactive" href="https://github.com/your-handle" target="_blank" rel="noreferrer"><span class="card-number">01</span><span class="card-label">GITHUB</span><strong>@YOUR-HANDLE <span>↗</span></strong><small>CODE / REPOSITORIES / NOTES</small></a>
-              <a class="index-card interactive" href="mailto:add-your-email@example.com"><span class="card-number">02</span><span class="card-label">EMAIL</span><strong>ADD YOUR EMAIL <span>↗</span></strong><small>DIRECT / OPEN CHANNEL</small></a>
-              <div class="index-card terminal-card"><span class="card-number">03</span><span class="card-label">TERMINAL / NOW</span><code><span>$ whoami</span><b>marco@ms-01</b><span>$ cat current.txt</span><b>build · learn · repeat</b><i>_</i></code></div>
-              <div class="index-card"><span class="card-number">04</span><span class="card-label">ROUTE TABLE</span><strong>01 / HOME<br />02 / ABOUT<br />03 / WORKS<br />04 / INDEX</strong><small>USE THE RAIL TO NAVIGATE</small></div>
-            </div>
-          </div>
-          <div class="contact-bar"><span class="mono">CONTACT_BAR / MS-01</span><span class="contact-line"></span><span class="mono">OPEN FOR SMALL BUILDS + GOOD QUESTIONS</span></div>
-        </section>
-
-        <section class="room room-not-found" id="room-not-found" aria-labelledby="not-found-title" aria-hidden="true">
-          <div class="not-found-card panel-frame"><span class="room-index">ERR_404 <i></i></span><h2 id="not-found-title">Signal not found.</h2><p>The requested room does not exist in this instrument.</p><a class="button button-primary interactive" href="#home" data-route="#home">RETURN HOME <span>↗</span></a></div>
-        </section>
-      </main>
-
-      <nav class="bottom-rail" aria-label="Portfolio rooms">
-        <div class="rail-corner mono"><span id="room-counter">01</span><span>/04</span></div>
-        <div class="room-links">
-          <a class="room-link is-active interactive" href="#home" data-route="#home" data-room-target="home" aria-current="page"><span>01</span><strong>HOME</strong><small>IDENTITY</small></a>
-          <a class="room-link interactive" href="#about" data-route="#about" data-room-target="about"><span>02</span><strong>ABOUT ME</strong><small>PROFILE</small></a>
-          <a class="room-link interactive" href="#works" data-route="#works" data-room-target="works"><span>03</span><strong>WORKS</strong><small>SELECTED</small></a>
-          <a class="room-link interactive" href="#index" data-route="#index" data-room-target="index"><span>04</span><strong>INDEX</strong><small>CONTACT</small></a>
-        </div>
-        <div class="rail-note mono">SCROLL / EXPLORE <span>↓</span></div>
-      </nav>
-
-      <div class="transition-curtain" aria-hidden="true"><span class="curtain-line"></span><span class="curtain-label mono">SWITCHING ROOM</span></div>
-      <div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
     </div>
-    <script src="app.js" defer></script>
-  </body>
+    <div class="board-sweep"></div>
+  </div>
+  <div class="frame">
+    <header class="rail rail-top">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">MS</span>
+        <span>Marco Sarmiento</span>
+      </a>
+      <span class="rail-mid">Baguio City, Philippines <i>/</i> BS Computer Science</span>
+      <span class="status"><span class="status-dot" aria-hidden="true"></span>Available</span>
+    </header>
+    <main class="stage" id="main">
+      <div class="split">
+        <section class="plate" aria-label="Portrait">
+          <span class="plate-marks" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span class="plate-plus" aria-hidden="true">PLATE 01<span>FIG. A</span></span>
+          <figure class="portrait" data-cursor="Portrait">
+            <picture>
+              <source srcset="images/portrait.webp" type="image/webp">
+              <img src="images/portrait.png" width="797" height="1240"
+                   alt="Marco Sarmiento" fetchpriority="high" decoding="async">
+            </picture>
+          </figure>
+          <span class="plate-tag" aria-hidden="true"><span></span><span class="tl">Portrait</span></span>
+          <span class="plate-spec" aria-hidden="true">16&#176;24&#8242; N &nbsp;/&nbsp; 120&#176;36&#8242; E</span>
+        </section>
+
+        <div class="nameplate">
+          <h1 class="name" data-split data-delay="180"><span class="sr-only">Marco Sarmiento — portfolio</span><span class="line" aria-hidden="true">Marco</span><span class="line" aria-hidden="true">Sarmiento</span></h1>
+          <span class="name-rule" aria-hidden="true"></span>
+          <div class="term" aria-hidden="true">
+            <p><span class="pr">$</span> <span class="cm">whoami</span></p>
+            <p class="out">marco_sarmiento &mdash; cs student, baguio city</p>
+            <p><span class="pr">$</span> <span class="cm">ls ~/now</span></p>
+            <p class="out"><span class="dir">portfolio/</span> <span class="dir">homelab/</span> <span class="dir">neocities/</span><span class="caret"></span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="rail rail-bottom" aria-label="Sections">
+      <div class="rooms">
+        <a class="room-link" href="index.html" title="Room 01 — Home" data-page="index.html" aria-current="page"><i>01</i><span class="rl-full">Home</span></a>
+        <a class="room-link" href="personal-information.html" title="Room 02 — Personal Information" data-page="personal-information.html"><i>02</i><span class="rl-full">Personal Information</span></a>
+        <a class="room-link" href="achievements.html" title="Room 03 — Achievements" data-page="achievements.html"><i>03</i><span class="rl-full">Achievements</span></a>
+      </div>
+    </nav>
+  </div>
+</body>
 </html>
