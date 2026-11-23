@@ -839,3 +839,31 @@ html.no-js .work:first-child{opacity:1;visibility:visible}
   .rd-legend{display:none}
 }
 @media (max-width:900px) and (max-height:640px),(max-height:480px){.vault{min-height:max(78vh,34rem)}}
+
+
+/* 19 ── friends & family: four plates, always in view ─────────────────── */
+.kin{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;min-height:0}
+.kin-card{flex:none}
+.kin-card:is(:hover,:focus-visible){border-color:rgba(226,177,120,.55)}
+.kin-card .card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 30%);filter:saturate(.9) brightness(.88);transition:transform .8s cubic-bezier(.22,.61,.24,1),filter .5s}
+.kin-card:is(:hover,:focus-visible) .card-media img{transform:scale(1.04);filter:none}
+.kin-card .card-body{min-height:0}
+.kin-card .card-title{-webkit-line-clamp:unset;line-clamp:unset;font-size:clamp(.95rem,.82rem + .45vw,1.2rem)}
+.kin-card[data-group="family"] .grp{color:var(--accent)}
+.kin-desc{margin-top:.55em;font:400 var(--label)/1.55 var(--mono);color:var(--ink-2)}
+@media (max-width:900px){
+  .kin{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:8px}
+  .kin-card{min-height:0}
+  .kin-card .card-body{padding:.5em .65em .6em}
+  .kin-desc{display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-top:.35em;font-size:var(--micro);line-height:1.45}
+}
+@media (max-width:900px) and (max-height:640px),(max-height:480px){.kin{min-height:max(120vh,40rem)}}
+
+
+/* 20 ── home: full-length portrait, head to toe, sized by plate height ── */
+.plate .portrait.portrait-full{width:auto;height:calc(100% - clamp(30px,6vh,56px));margin-bottom:clamp(8px,1.8vh,18px);place-items:stretch}
+.plate .portrait-full picture{display:block;height:100%}
+.plate .portrait-full img{width:auto;height:100%;max-width:100%;object-fit:contain}
+.plate{grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr)}
+.plate .portrait.portrait-full{justify-self:center;align-self:end}
+.plate .portrait.portrait-full{display:block}
